@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "model": "58257",
+    "manufacturer": "",
+    "zemax_file": "g:\\vision_example_1\\kit-app-template\\_build\\assets\\Lenses\\ZeMax\\58257_002_BB.ZAR",
+    "zemax_version": "140501",
+    "notes": "Gold Series",
+    "parse_version": "1.0"
+  },
+  "optical": {
+    "focal_length_mm": 0.0,
+    "effective_focal_length_mm": 0.0,
+    "back_focal_length_mm": 0.0,
+    "working_distance_mm": 130.0,
+    "f_number": 6.0,
+    "numerical_aperture": 0.08333333333333333,
+    "field_of_view_deg": 0.0,
+    "half_field_angle_deg": 0.0,
+    "magnification": 0.0,
+    "entrance_pupil_diameter_mm": 0.0,
+    "entrance_pupil_position_mm": 0.0,
+    "exit_pupil_diameter_mm": 0.0,
+    "exit_pupil_position_mm": 0.0,
+    "is_telecentric": false,
+    "telecentric_type": "",
+    "total_track_length_mm": 297.615904,
+    "image_height_mm": 4.0,
+    "object_height_mm": 0.0
+  },
+  "distortion": {
+    "model": "brown-conrady",
+    "k1": 0.0,
+    "k2": 0.0,
+    "k3": 0.0,
+    "k4": 0.0,
+    "k5": 0.0,
+    "k6": 0.0,
+    "p1": 0.0,
+    "p2": 0.0,
+    "max_distortion_percent": 0.0,
+    "distortion_at_edge_percent": 0.0
+  },
+  "mtf": {
+    "spatial_frequencies": [],
+    "contrast_sagittal": [],
+    "contrast_tangential": [],
+    "field_positions": [
+      0.0
+    ],
+    "wavelength_nm": 587.5618000000001,
+    "f_stop": 6.0,
+    "field_dependent": false,
+    "mtf_at_50lpmm": 0.0,
+    "mtf_at_100lpmm": 0.0,
+    "field_dependent_data": {}
+  },
+  "chromatic": {
+    "lateral_ca_red_um": 0.0,
+    "lateral_ca_blue_um": 0.0,
+    "longitudinal_ca_mm": 0.0,
+    "wavelengths_nm": [
+      486.1,
+      546.1,
+      656.3
+    ]
+  },
+  "surface_count": 7
+}

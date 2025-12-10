@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "model": "0.5x Telecentric (WD 100mm)",
+    "manufacturer": "Preset",
+    "notes": "Standard 0.5x telecentric lens with 100mm working distance",
+    "parse_version": "1.0"
+  },
+  "optical": {
+    "focal_length_mm": 0,
+    "effective_focal_length_mm": 0,
+    "working_distance_mm": 100.0,
+    "f_number": 8.0,
+    "field_of_view_deg": 0,
+    "magnification": 0.5,
+    "numerical_aperture": 0.0625,
+    "is_telecentric": true,
+    "telecentric_type": "object-space"
+  },
+  "distortion": {
+    "model": "brown-conrady",
+    "k1": 0,
+    "k2": 0,
+    "k3": 0,
+    "p1": 0,
+    "p2": 0
+  },
+  "mtf": {
+    "mtf_at_50lpmm": 0.75,
+    "mtf_at_100lpmm": 0.5,
+    "f_stop": 8.0
+  }
+}

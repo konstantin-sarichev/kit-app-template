@@ -1,0 +1,848 @@
+[2025-09-08 12:28:36,290][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_kit_template@1.4.2. args: ['template', 'new']
+[2025-09-08 12:28:47,757][INFO][omni.repo.kit_template.backend.templates.extension_template._process_extension_name:287] Returning configuration extension name suggestion: my_company.my_usd_composer_setup_extension
+[2025-09-08 12:28:48,963][INFO][omni.repo.kit_template.backend.templates.extension_template._query_loop:41] Skipping extension_name due to being calculated from extension_name.
+[2025-09-08 12:28:50,388][INFO][omni.repo.kit_template.backend.templates.extension_template._query_loop:41] Skipping python_module_toplevel due to being calculated from extension_name.
+[2025-09-08 12:28:50,389][INFO][omni.repo.kit_template.backend.templates.extension_template._query_loop:41] Skipping python_module_path due to being calculated from extension_name.
+[2025-09-08 12:28:50,398][INFO][omni.repo.kit_template.backend.template_render.render_template_dir:85] Rendering template G:\Vision_Example_1\kit-app-template\templates\extensions\usd_composer.setup\template to G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension. Context: {'extension_name': 'my_company.my_usd_composer_setup_extension', 'python_module': 'my_company.my_usd_composer_setup_extension', 'python_module_path': 'my_company/my_usd_composer_setup_extension', 'python_module_toplevel': 'my_company', 'extension_display_name': 'My USD Composer Setup Extension', 'version': '0.1.0'}
+[2025-09-08 12:28:50,401][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file premake5.lua
+[2025-09-08 12:28:50,402][INFO][omni.repo.kit_template.backend.template_render.generate_file:63] Rendering a file at G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\premake5.lua
+[2025-09-08 12:28:50,403][INFO][omni.repo.kit_template.backend.template_render.generate_file:76] Writing contents to file G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\premake5.lua
+[2025-09-08 12:28:50,404][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file config\extension.toml
+[2025-09-08 12:28:50,404][INFO][omni.repo.kit_template.backend.template_render.generate_file:63] Rendering a file at G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\config\extension.toml
+[2025-09-08 12:28:50,406][INFO][omni.repo.kit_template.backend.template_render.generate_file:76] Writing contents to file G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\config\extension.toml
+[2025-09-08 12:28:50,407][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file data\BuiltInMaterials.usda
+[2025-09-08 12:28:50,408][INFO][omni.repo.kit_template.backend.template_render.generate_file:63] Rendering a file at G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\BuiltInMaterials.usda
+[2025-09-08 12:28:50,428][INFO][omni.repo.kit_template.backend.template_render.generate_file:76] Writing contents to file G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\BuiltInMaterials.usda
+[2025-09-08 12:28:50,429][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file data\nvidia-omniverse-create.ico
+[2025-09-08 12:28:50,430][INFO][omni.repo.kit_template.backend.template_render.generate_file:60] Copying data\nvidia-omniverse-create.ico to G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\nvidia-omniverse-create.ico without rendering. Is binary: True
+[2025-09-08 12:28:50,431][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file data\nvidia-omniverse-create.png
+[2025-09-08 12:28:50,432][INFO][omni.repo.kit_template.backend.template_render.generate_file:60] Copying data\nvidia-omniverse-create.png to G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\nvidia-omniverse-create.png without rendering. Is binary: True
+[2025-09-08 12:28:50,433][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file data\nvidia-omniverse-usd_composer.ico
+[2025-09-08 12:28:50,433][INFO][omni.repo.kit_template.backend.template_render.generate_file:60] Copying data\nvidia-omniverse-usd_composer.ico to G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\nvidia-omniverse-usd_composer.ico without rendering. Is binary: True
+[2025-09-08 12:28:50,434][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file data\nvidia-omniverse-usd_composer.png
+[2025-09-08 12:28:50,435][INFO][omni.repo.kit_template.backend.template_render.generate_file:60] Copying data\nvidia-omniverse-usd_composer.png to G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\nvidia-omniverse-usd_composer.png without rendering. Is binary: True
+[2025-09-08 12:28:50,436][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file data\flattener_materials\DrivesimPBR.mdl
+[2025-09-08 12:28:50,437][INFO][omni.repo.kit_template.backend.template_render.generate_file:63] Rendering a file at G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\flattener_materials\DrivesimPBR.mdl
+[2025-09-08 12:28:50,439][INFO][omni.repo.kit_template.backend.template_render.generate_file:76] Writing contents to file G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\flattener_materials\DrivesimPBR.mdl
+[2025-09-08 12:28:50,440][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file data\flattener_materials\DrivesimPBR_Model.mdl
+[2025-09-08 12:28:50,441][INFO][omni.repo.kit_template.backend.template_render.generate_file:63] Rendering a file at G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\flattener_materials\DrivesimPBR_Model.mdl
+[2025-09-08 12:28:50,442][INFO][omni.repo.kit_template.backend.template_render.generate_file:76] Writing contents to file G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\flattener_materials\DrivesimPBR_Model.mdl
+[2025-09-08 12:28:50,443][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file data\flattener_materials\DrivesimPBR_Opacity.mdl
+[2025-09-08 12:28:50,444][INFO][omni.repo.kit_template.backend.template_render.generate_file:63] Rendering a file at G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\flattener_materials\DrivesimPBR_Opacity.mdl
+[2025-09-08 12:28:50,446][INFO][omni.repo.kit_template.backend.template_render.generate_file:76] Writing contents to file G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\flattener_materials\DrivesimPBR_Opacity.mdl
+[2025-09-08 12:28:50,447][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file data\flattener_materials\DrivesimPBR_Translucent.mdl
+[2025-09-08 12:28:50,448][INFO][omni.repo.kit_template.backend.template_render.generate_file:63] Rendering a file at G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\flattener_materials\DrivesimPBR_Translucent.mdl
+[2025-09-08 12:28:50,449][INFO][omni.repo.kit_template.backend.template_render.generate_file:76] Writing contents to file G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\flattener_materials\DrivesimPBR_Translucent.mdl
+[2025-09-08 12:28:50,450][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file data\flattener_materials\OmniUe4Base.mdl
+[2025-09-08 12:28:50,451][INFO][omni.repo.kit_template.backend.template_render.generate_file:63] Rendering a file at G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\flattener_materials\OmniUe4Base.mdl
+[2025-09-08 12:28:50,451][INFO][omni.repo.kit_template.backend.template_render.generate_file:76] Writing contents to file G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\flattener_materials\OmniUe4Base.mdl
+[2025-09-08 12:28:50,452][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file data\flattener_materials\OmniUe4Function.mdl
+[2025-09-08 12:28:50,453][INFO][omni.repo.kit_template.backend.template_render.generate_file:63] Rendering a file at G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\flattener_materials\OmniUe4Function.mdl
+[2025-09-08 12:28:50,457][INFO][omni.repo.kit_template.backend.template_render.generate_file:76] Writing contents to file G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\data\flattener_materials\OmniUe4Function.mdl
+[2025-09-08 12:28:50,458][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file layouts\default.json
+[2025-09-08 12:28:50,459][INFO][omni.repo.kit_template.backend.template_render.generate_file:63] Rendering a file at G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\layouts\default.json
+[2025-09-08 12:28:50,461][INFO][omni.repo.kit_template.backend.template_render.generate_file:76] Writing contents to file G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\layouts\default.json
+[2025-09-08 12:28:50,462][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file {{python_module_path}}\extension.py
+[2025-09-08 12:28:50,463][INFO][omni.repo.kit_template.backend.template_render.generate_file:63] Rendering a file at G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\my_company/my_usd_composer_setup_extension\extension.py
+[2025-09-08 12:28:50,466][INFO][omni.repo.kit_template.backend.template_render.generate_file:76] Writing contents to file G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\my_company/my_usd_composer_setup_extension\extension.py
+[2025-09-08 12:28:50,466][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file {{python_module_path}}\__init__.py
+[2025-09-08 12:28:50,467][INFO][omni.repo.kit_template.backend.template_render.generate_file:63] Rendering a file at G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\my_company/my_usd_composer_setup_extension\__init__.py
+[2025-09-08 12:28:50,468][INFO][omni.repo.kit_template.backend.template_render.generate_file:76] Writing contents to file G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\my_company/my_usd_composer_setup_extension\__init__.py
+[2025-09-08 12:28:50,469][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file {{python_module_path}}\tests\test_app_extensions.py
+[2025-09-08 12:28:50,469][INFO][omni.repo.kit_template.backend.template_render.generate_file:63] Rendering a file at G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\my_company/my_usd_composer_setup_extension\tests\test_app_extensions.py
+[2025-09-08 12:28:50,470][INFO][omni.repo.kit_template.backend.template_render.generate_file:76] Writing contents to file G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\my_company/my_usd_composer_setup_extension\tests\test_app_extensions.py
+[2025-09-08 12:28:50,471][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file {{python_module_path}}\tests\test_app_startup.py
+[2025-09-08 12:28:50,472][INFO][omni.repo.kit_template.backend.template_render.generate_file:63] Rendering a file at G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\my_company/my_usd_composer_setup_extension\tests\test_app_startup.py
+[2025-09-08 12:28:50,473][INFO][omni.repo.kit_template.backend.template_render.generate_file:76] Writing contents to file G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\my_company/my_usd_composer_setup_extension\tests\test_app_startup.py
+[2025-09-08 12:28:50,474][INFO][omni.repo.kit_template.backend.template_render.generate_file:41] Processing file {{python_module_path}}\tests\__init__.py
+[2025-09-08 12:28:50,474][INFO][omni.repo.kit_template.backend.template_render.generate_file:63] Rendering a file at G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\my_company/my_usd_composer_setup_extension\tests\__init__.py
+[2025-09-08 12:28:50,475][INFO][omni.repo.kit_template.backend.template_render.generate_file:76] Writing contents to file G:\Vision_Example_1\kit-app-template\source\extensions\my_company.my_usd_composer_setup_extension\my_company/my_usd_composer_setup_extension\tests\__init__.py
+[2025-09-08 12:28:50,477][INFO][omni.repo.kit_template.backend.template_render.render_template_file:106] Rendering template G:\Vision_Example_1\kit-app-template\templates\apps\usd_composer\omni.usd_composer.kit to G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit. Context: {'setup_extension_name': 'my_company.my_usd_composer_setup_extension', 'application_name': 'my_company.my_usd_composer', 'application_display_name': 'My USD Composer', 'version': '0.1.0', 'repo_rendered_extensions': ['my_company.my_usd_composer_setup_extension']}
+[2025-09-08 12:29:13,914][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build@1.13.2. args: ['build']
+[2025-09-08 12:29:13,915][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target' set to 'windows-x86_64'
+[2025-09-08 12:29:13,915][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target_abi' set to 'windows-x86_64'
+[2025-09-08 12:29:13,916][INFO][omni.repo.man.utils.run_process:241] running process: powershell -Command "New-Item -ItemType Directory -Path G:/Vision_Example_1/kit-app-template/source/apps -ErrorAction SilentlyContinue" ; "Write-Host 'Done'"
+[2025-09-08 12:29:14,737][INFO][omni.repo.build.dependencies.pull_files:275] Skipping project file (doesn't exist): G:/Vision_Example_1/kit-app-template/deps/host-deps.packman.xml
+[2025-09-08 12:29:14,837][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release
+[2025-09-08 12:29:16,224][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_precache_exts@None. args: ['precache_exts', '-c', 'release']
+[2025-09-08 12:29:16,227][INFO][omni.repo.precache_exts.run:315] precaching app: G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit
+[2025-09-08 12:29:16,228][INFO][omni.repo.man.utils.run_process:241] running process: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1
+[2025-09-08 12:29:30,945][INFO][omni.repo.build.pippull.pull_pip_dependencies:433] Checking for Packman package: repo_pip_cache@4704723685b5f665c84af50ac575e8195f52fa31-v2-windows-x86_64
+[2025-09-08 12:29:30,945][INFO][omni.repo.build.pippull.pull_pip_dependencies:441] Repo build python cache disabled, pulling fresh dependencies.
+[2025-09-08 12:29:30,946][INFO][omni.repo.build.pippull.pull_using_pip_from_config:242] >>> Pulling pip packages from 'G:\Vision_Example_1\kit-app-template\tools\deps\pip.toml'.
+[2025-09-08 12:29:30,946][INFO][omni.repo.build.pippull.pull_using_pip_from_config:382] >>> Skipping license gathering.
+[2025-09-08 12:29:30,947][INFO][omni.repo.build.build.generate_projects:263] generating project from: G:/Vision_Example_1/kit-app-template/premake5.lua
+[2025-09-08 12:29:30,948][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/_build/host-deps\premake\bin\premake5.exe --file=G:/Vision_Example_1/kit-app-template/premake5.lua no-compile --platform-host=windows-x86_64 --scripts=G:\packman-repo\chk\repo_build\1.13.2\lua --platform-target=windows-x86_64 --linux-x86_64-cxx11-abi=True --solution-name=kit-app-template
+[2025-09-08 12:29:32,535][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_kit_pull_extensions@1.10.0. args: ['pull_extensions', 'setup']
+[2025-09-08 12:29:32,536][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'debug'
+[2025-09-08 12:29:32,548][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'release'
+[2025-09-08 12:29:34,037][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/debug/VERSION']
+[2025-09-08 12:29:34,038][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-09-08 12:29:34,038][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-09-08 12:29:34,059][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-09-08 12:29:34,059][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-08 12:29:34,089][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-08 12:29:34,120][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-09-08 12:29:34,121][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-08 12:29:34,147][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-08 12:29:34,178][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-09-08 12:29:34,178][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-09-08 12:29:34,181][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\debug\VERSION'
+[2025-09-08 12:29:35,641][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release/VERSION']
+[2025-09-08 12:29:35,642][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-09-08 12:29:35,642][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-09-08 12:29:35,662][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-09-08 12:29:35,663][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-08 12:29:35,692][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-08 12:29:35,723][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-09-08 12:29:35,723][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-08 12:29:35,750][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-08 12:29:35,780][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-09-08 12:29:35,781][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-09-08 12:29:35,784][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\VERSION'
+[2025-09-08 12:29:35,866][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 0 files took: 0.000 milliseconds.
+[2025-09-08 12:29:35,867][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 0 folders took: 0.000 milliseconds.
+[2025-09-08 12:29:35,906][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 8 files took: 38.999 milliseconds.
+[2025-09-08 12:29:35,928][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 8 folders took: 22.538 milliseconds.
+[2025-09-08 12:58:17,698][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-09-08 16:04:50,542][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-09-08 17:08:55,253][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-09-18 12:10:16,186][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-09-18 14:16:26,337][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-09-18 14:17:29,126][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build@1.13.2. args: ['build']
+[2025-09-18 14:17:29,127][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target' set to 'windows-x86_64'
+[2025-09-18 14:17:29,127][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target_abi' set to 'windows-x86_64'
+[2025-09-18 14:17:29,128][INFO][omni.repo.man.utils.run_process:241] running process: powershell -Command "New-Item -ItemType Directory -Path G:/Vision_Example_1/kit-app-template/source/apps -ErrorAction SilentlyContinue" ; "Write-Host 'Done'"
+[2025-09-18 14:17:29,632][INFO][omni.repo.build.dependencies.pull_files:275] Skipping project file (doesn't exist): G:/Vision_Example_1/kit-app-template/deps/host-deps.packman.xml
+[2025-09-18 14:17:29,666][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release
+[2025-09-18 14:17:31,070][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_precache_exts@None. args: ['precache_exts', '-c', 'release']
+[2025-09-18 14:17:31,072][INFO][omni.repo.precache_exts.run:315] precaching app: G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit
+[2025-09-18 14:17:31,074][INFO][omni.repo.man.utils.run_process:241] running process: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1
+[2025-09-18 14:17:34,540][ERROR][omni.repo.man.utils.run_process:264] error running: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1, code: 55, message: ""
+[2025-09-18 14:17:34,549][ERROR][omni.repo.man.exceptions_utils.print_log:182] SystemExit exception stack trace dumped to logfile G:/Vision_Example_1/kit-app-template/_repo/repo.log. Stacks dumped to console via `--verbose` or `--tracebacks`. 
+SystemExit: 55
+[2025-09-18 14:17:34,552][ERROR][omni.repo.emit_stack_to_logfile:156] SystemExit encountered while running repo_precache_exts via ['G:\\Vision_Example_1\\kit-app-template\\tools\\repoman\\repoman.py', 'precache_exts', '-c', 'release']:
+Traceback (most recent call last):
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 138, in run
+    options.func(options)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 90, in <lambda>
+    func=lambda args, func=func, config=self.merged_tool_config: func(args, config),
+  File "G:/packman-repo/chk/kit-kernel/108.0.0+feature.221586.5941509b.gl.windows-x86_64.release/dev/tools/repoman/precache_exts.py", line 481, in run_repo_tool
+    run(tool_config, options, repo_folders["root"], platform_host)
+  File "G:/packman-repo/chk/kit-kernel/108.0.0+feature.221586.5941509b.gl.windows-x86_64.release/dev/tools/repoman/precache_exts.py", line 434, in run
+    sys.exit(returncode)
+SystemExit: 55
+[2025-09-18 14:17:34,635][ERROR][omni.repo.man.utils.run_process:264] error running: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release, code: 55, message: ""
+[2025-09-18 14:17:34,642][WARNING][omni.repo.man.version.get_tool_version:312] Retrieving repo_build version via VERSION file.
+[2025-09-18 14:17:34,644][ERROR][omni.repo.man.exceptions_utils.print_log:182] SystemExit exception stack trace dumped to logfile G:/Vision_Example_1/kit-app-template/_repo/repo.log. Stacks dumped to console via `--verbose` or `--tracebacks`. 
+SystemExit: 55
+[2025-09-18 14:17:34,648][ERROR][omni.repo.emit_stack_to_logfile:156] SystemExit encountered while running repo_build via ['G:\\Vision_Example_1\\kit-app-template\\tools\\repoman\\repoman.py', 'build']:
+Traceback (most recent call last):
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 138, in run
+    options.func(options)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 90, in <lambda>
+    func=lambda args, func=func, config=self.merged_tool_config: func(args, config),
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\main.py", line 1576, in run_repo_tool
+    run_build(options, repo_folders, None, config)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\utils.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\main.py", line 1124, in run_build
+    process_after_pull_commands(
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\dependencies.py", line 364, in process_after_pull_commands
+    run_command(command, repo_folders, platform_target, config, extra_tokens, print_name="After Pull Commands")
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\utils.py", line 23, in run_command
+    run_process(command, exit_on_error=True)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\utils.py", line 266, in run_process
+    sys.exit(returncode)
+SystemExit: 55
+[2025-09-18 14:24:51,473][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build@1.13.2. args: ['build']
+[2025-09-18 14:24:51,474][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target' set to 'windows-x86_64'
+[2025-09-18 14:24:51,474][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target_abi' set to 'windows-x86_64'
+[2025-09-18 14:24:51,475][INFO][omni.repo.man.utils.run_process:241] running process: powershell -Command "New-Item -ItemType Directory -Path G:/Vision_Example_1/kit-app-template/source/apps -ErrorAction SilentlyContinue" ; "Write-Host 'Done'"
+[2025-09-18 14:24:51,649][INFO][omni.repo.build.dependencies.pull_files:275] Skipping project file (doesn't exist): G:/Vision_Example_1/kit-app-template/deps/host-deps.packman.xml
+[2025-09-18 14:24:51,663][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release
+[2025-09-18 14:24:53,041][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_precache_exts@None. args: ['precache_exts', '-c', 'release']
+[2025-09-18 14:24:53,044][INFO][omni.repo.precache_exts.run:315] precaching app: G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit
+[2025-09-18 14:24:53,045][INFO][omni.repo.man.utils.run_process:241] running process: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1
+[2025-09-18 14:24:53,495][INFO][omni.repo.build.pippull.pull_pip_dependencies:403] Skip pip pull of because is most recent config (['G:/Vision_Example_1/kit-app-template/tools/deps/pip.toml']) is older than 'G:/Vision_Example_1/kit-app-template/_build\.lastpippull'.
+[2025-09-18 14:24:53,496][INFO][omni.repo.build.build.generate_projects:263] generating project from: G:/Vision_Example_1/kit-app-template/premake5.lua
+[2025-09-18 14:24:53,497][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/_build/host-deps\premake\bin\premake5.exe --file=G:/Vision_Example_1/kit-app-template/premake5.lua no-compile --platform-host=windows-x86_64 --scripts=G:\packman-repo\chk\repo_build\1.13.2\lua --platform-target=windows-x86_64 --linux-x86_64-cxx11-abi=True --solution-name=kit-app-template
+[2025-09-18 14:24:55,284][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_kit_pull_extensions@1.10.0. args: ['pull_extensions', 'setup']
+[2025-09-18 14:24:55,285][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'debug'
+[2025-09-18 14:24:55,298][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'release'
+[2025-09-18 14:24:56,765][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/debug/VERSION']
+[2025-09-18 14:24:56,766][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-09-18 14:24:56,766][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-09-18 14:24:56,785][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-09-18 14:24:56,786][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-18 14:24:56,816][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-18 14:24:56,857][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-09-18 14:24:56,857][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-18 14:24:56,883][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-18 14:24:56,914][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-09-18 14:24:56,915][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-09-18 14:24:56,918][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\debug\VERSION'
+[2025-09-18 14:24:58,359][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release/VERSION']
+[2025-09-18 14:24:58,359][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-09-18 14:24:58,360][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-09-18 14:24:58,378][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-09-18 14:24:58,379][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-18 14:24:58,408][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-18 14:24:58,439][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-09-18 14:24:58,439][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-18 14:24:58,466][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-18 14:24:58,497][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-09-18 14:24:58,497][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-09-18 14:24:58,500][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\VERSION'
+[2025-09-18 14:24:58,580][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 0 files took: 0.000 milliseconds.
+[2025-09-18 14:24:58,580][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 0 folders took: 0.000 milliseconds.
+[2025-09-18 14:24:58,595][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 8 files took: 14.151 milliseconds.
+[2025-09-18 14:24:58,600][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 8 folders took: 4.971 milliseconds.
+[2025-09-18 14:25:05,202][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-09-18 14:54:06,712][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build@1.13.2. args: ['build']
+[2025-09-18 14:54:06,713][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target' set to 'windows-x86_64'
+[2025-09-18 14:54:06,713][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target_abi' set to 'windows-x86_64'
+[2025-09-18 14:54:06,715][INFO][omni.repo.man.utils.run_process:241] running process: powershell -Command "New-Item -ItemType Directory -Path G:/Vision_Example_1/kit-app-template/source/apps -ErrorAction SilentlyContinue" ; "Write-Host 'Done'"
+[2025-09-18 14:54:06,891][INFO][omni.repo.build.dependencies.pull_files:275] Skipping project file (doesn't exist): G:/Vision_Example_1/kit-app-template/deps/host-deps.packman.xml
+[2025-09-18 14:54:06,906][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release
+[2025-09-18 14:54:08,345][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_precache_exts@None. args: ['precache_exts', '-c', 'release']
+[2025-09-18 14:54:08,347][INFO][omni.repo.precache_exts.run:315] precaching app: G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit
+[2025-09-18 14:54:08,349][INFO][omni.repo.man.utils.run_process:241] running process: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1
+[2025-09-18 14:54:08,849][INFO][omni.repo.build.pippull.pull_pip_dependencies:403] Skip pip pull of because is most recent config (['G:/Vision_Example_1/kit-app-template/tools/deps/pip.toml']) is older than 'G:/Vision_Example_1/kit-app-template/_build\.lastpippull'.
+[2025-09-18 14:54:08,850][INFO][omni.repo.build.build.generate_projects:263] generating project from: G:/Vision_Example_1/kit-app-template/premake5.lua
+[2025-09-18 14:54:08,850][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/_build/host-deps\premake\bin\premake5.exe --file=G:/Vision_Example_1/kit-app-template/premake5.lua no-compile --platform-host=windows-x86_64 --scripts=G:\packman-repo\chk\repo_build\1.13.2\lua --platform-target=windows-x86_64 --linux-x86_64-cxx11-abi=True --solution-name=kit-app-template
+[2025-09-18 14:54:10,395][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_kit_pull_extensions@1.10.0. args: ['pull_extensions', 'setup']
+[2025-09-18 14:54:10,397][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'debug'
+[2025-09-18 14:54:10,407][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'release'
+[2025-09-18 14:54:11,894][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/debug/VERSION']
+[2025-09-18 14:54:11,894][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-09-18 14:54:11,895][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-09-18 14:54:11,915][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-09-18 14:54:11,915][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-18 14:54:11,946][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-18 14:54:11,978][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-09-18 14:54:11,978][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-18 14:54:12,006][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-18 14:54:12,038][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-09-18 14:54:12,038][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-09-18 14:54:12,042][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\debug\VERSION'
+[2025-09-18 14:54:13,491][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release/VERSION']
+[2025-09-18 14:54:13,492][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-09-18 14:54:13,492][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-09-18 14:54:13,512][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-09-18 14:54:13,512][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-18 14:54:13,543][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-18 14:54:13,575][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-09-18 14:54:13,575][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-18 14:54:13,602][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-18 14:54:13,634][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-09-18 14:54:13,634][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-09-18 14:54:13,637][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\VERSION'
+[2025-09-18 14:54:13,717][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 0 files took: 0.000 milliseconds.
+[2025-09-18 14:54:13,717][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 0 folders took: 0.000 milliseconds.
+[2025-09-18 14:54:13,721][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 8 files took: 4.000 milliseconds.
+[2025-09-18 14:54:13,726][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 8 folders took: 4.580 milliseconds.
+[2025-09-18 14:54:25,609][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-09-18 15:32:53,508][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build@1.13.2. args: ['build']
+[2025-09-18 15:32:53,509][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target' set to 'windows-x86_64'
+[2025-09-18 15:32:53,509][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target_abi' set to 'windows-x86_64'
+[2025-09-18 15:32:53,511][INFO][omni.repo.man.utils.run_process:241] running process: powershell -Command "New-Item -ItemType Directory -Path G:/Vision_Example_1/kit-app-template/source/apps -ErrorAction SilentlyContinue" ; "Write-Host 'Done'"
+[2025-09-18 15:32:53,773][INFO][omni.repo.build.dependencies.pull_files:275] Skipping project file (doesn't exist): G:/Vision_Example_1/kit-app-template/deps/host-deps.packman.xml
+[2025-09-18 15:32:53,788][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release
+[2025-09-18 15:32:55,197][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_precache_exts@None. args: ['precache_exts', '-c', 'release']
+[2025-09-18 15:32:55,200][INFO][omni.repo.precache_exts.run:315] precaching app: G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit
+[2025-09-18 15:32:55,201][INFO][omni.repo.man.utils.run_process:241] running process: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1
+[2025-09-18 15:32:55,685][INFO][omni.repo.build.pippull.pull_pip_dependencies:403] Skip pip pull of because is most recent config (['G:/Vision_Example_1/kit-app-template/tools/deps/pip.toml']) is older than 'G:/Vision_Example_1/kit-app-template/_build\.lastpippull'.
+[2025-09-18 15:32:55,686][INFO][omni.repo.build.build.generate_projects:263] generating project from: G:/Vision_Example_1/kit-app-template/premake5.lua
+[2025-09-18 15:32:55,686][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/_build/host-deps\premake\bin\premake5.exe --file=G:/Vision_Example_1/kit-app-template/premake5.lua no-compile --platform-host=windows-x86_64 --scripts=G:\packman-repo\chk\repo_build\1.13.2\lua --platform-target=windows-x86_64 --linux-x86_64-cxx11-abi=True --solution-name=kit-app-template
+[2025-09-18 15:32:57,255][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_kit_pull_extensions@1.10.0. args: ['pull_extensions', 'setup']
+[2025-09-18 15:32:57,256][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'debug'
+[2025-09-18 15:32:57,260][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'release'
+[2025-09-18 15:32:58,725][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/debug/VERSION']
+[2025-09-18 15:32:58,726][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-09-18 15:32:58,726][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-09-18 15:32:58,746][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-09-18 15:32:58,746][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-18 15:32:58,777][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-18 15:32:58,809][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-09-18 15:32:58,809][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-18 15:32:58,837][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-18 15:32:58,869][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-09-18 15:32:58,869][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-09-18 15:32:58,872][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\debug\VERSION'
+[2025-09-18 15:33:00,322][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release/VERSION']
+[2025-09-18 15:33:00,322][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-09-18 15:33:00,323][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-09-18 15:33:00,342][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-09-18 15:33:00,342][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-18 15:33:00,372][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-18 15:33:00,404][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-09-18 15:33:00,405][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-09-18 15:33:00,432][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-09-18 15:33:00,464][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-09-18 15:33:00,464][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-09-18 15:33:00,467][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\VERSION'
+[2025-09-18 15:33:00,547][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 0 files took: 0.000 milliseconds.
+[2025-09-18 15:33:00,547][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 0 folders took: 0.000 milliseconds.
+[2025-09-18 15:33:00,552][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 8 files took: 3.999 milliseconds.
+[2025-09-18 15:33:00,556][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 8 folders took: 4.000 milliseconds.
+[2025-09-18 15:33:18,623][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-09-18 17:27:45,399][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-09-22 12:20:16,988][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-09-23 16:05:44,066][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-09-23 16:07:49,409][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-09-24 10:53:57,706][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-09-24 17:49:51,340][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-09-29 13:24:25,226][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-09-29 17:53:39,800][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-10-14 17:22:07,076][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-10-16 11:53:59,637][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-03 17:58:12,642][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-04 15:55:29,228][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-10 15:32:41,561][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-10 18:12:32,344][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build@1.13.2. args: ['build']
+[2025-11-10 18:12:32,345][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target' set to 'windows-x86_64'
+[2025-11-10 18:12:32,346][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target_abi' set to 'windows-x86_64'
+[2025-11-10 18:12:32,346][INFO][omni.repo.man.utils.run_process:241] running process: powershell -Command "New-Item -ItemType Directory -Path G:/Vision_Example_1/kit-app-template/source/apps -ErrorAction SilentlyContinue" ; "Write-Host 'Done'"
+[2025-11-10 18:12:32,558][INFO][omni.repo.build.dependencies.pull_files:275] Skipping project file (doesn't exist): G:/Vision_Example_1/kit-app-template/deps/host-deps.packman.xml
+[2025-11-10 18:12:32,608][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release
+[2025-11-10 18:12:34,070][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_precache_exts@None. args: ['precache_exts', '-c', 'release']
+[2025-11-10 18:12:34,073][INFO][omni.repo.precache_exts.run:315] precaching app: G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit
+[2025-11-10 18:12:34,074][INFO][omni.repo.man.utils.run_process:241] running process: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1
+[2025-11-10 18:12:38,647][ERROR][omni.repo.man.utils.run_process:264] error running: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1, code: 55, message: ""
+[2025-11-10 18:12:38,655][ERROR][omni.repo.man.exceptions_utils.print_log:182] SystemExit exception stack trace dumped to logfile G:/Vision_Example_1/kit-app-template/_repo/repo.log. Stacks dumped to console via `--verbose` or `--tracebacks`. 
+SystemExit: 55
+[2025-11-10 18:12:38,657][ERROR][omni.repo.emit_stack_to_logfile:156] SystemExit encountered while running repo_precache_exts via ['G:\\Vision_Example_1\\kit-app-template\\tools\\repoman\\repoman.py', 'precache_exts', '-c', 'release']:
+Traceback (most recent call last):
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 138, in run
+    options.func(options)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 90, in <lambda>
+    func=lambda args, func=func, config=self.merged_tool_config: func(args, config),
+  File "G:/packman-repo/chk/kit-kernel/108.0.0+feature.221586.5941509b.gl.windows-x86_64.release/dev/tools/repoman/precache_exts.py", line 481, in run_repo_tool
+    run(tool_config, options, repo_folders["root"], platform_host)
+  File "G:/packman-repo/chk/kit-kernel/108.0.0+feature.221586.5941509b.gl.windows-x86_64.release/dev/tools/repoman/precache_exts.py", line 434, in run
+    sys.exit(returncode)
+SystemExit: 55
+[2025-11-10 18:12:38,765][ERROR][omni.repo.man.utils.run_process:264] error running: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release, code: 55, message: ""
+[2025-11-10 18:12:38,770][WARNING][omni.repo.man.version.get_tool_version:312] Retrieving repo_build version via VERSION file.
+[2025-11-10 18:12:38,772][ERROR][omni.repo.man.exceptions_utils.print_log:182] SystemExit exception stack trace dumped to logfile G:/Vision_Example_1/kit-app-template/_repo/repo.log. Stacks dumped to console via `--verbose` or `--tracebacks`. 
+SystemExit: 55
+[2025-11-10 18:12:38,773][ERROR][omni.repo.emit_stack_to_logfile:156] SystemExit encountered while running repo_build via ['G:\\Vision_Example_1\\kit-app-template\\tools\\repoman\\repoman.py', 'build']:
+Traceback (most recent call last):
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 138, in run
+    options.func(options)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 90, in <lambda>
+    func=lambda args, func=func, config=self.merged_tool_config: func(args, config),
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\main.py", line 1576, in run_repo_tool
+    run_build(options, repo_folders, None, config)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\utils.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\main.py", line 1124, in run_build
+    process_after_pull_commands(
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\dependencies.py", line 364, in process_after_pull_commands
+    run_command(command, repo_folders, platform_target, config, extra_tokens, print_name="After Pull Commands")
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\utils.py", line 23, in run_command
+    run_process(command, exit_on_error=True)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\utils.py", line 266, in run_process
+    sys.exit(returncode)
+SystemExit: 55
+[2025-11-10 18:13:32,398][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build@1.13.2. args: ['build']
+[2025-11-10 18:13:32,399][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target' set to 'windows-x86_64'
+[2025-11-10 18:13:32,399][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target_abi' set to 'windows-x86_64'
+[2025-11-10 18:13:32,400][INFO][omni.repo.man.utils.run_process:241] running process: powershell -Command "New-Item -ItemType Directory -Path G:/Vision_Example_1/kit-app-template/source/apps -ErrorAction SilentlyContinue" ; "Write-Host 'Done'"
+[2025-11-10 18:13:32,585][INFO][omni.repo.build.dependencies.pull_files:275] Skipping project file (doesn't exist): G:/Vision_Example_1/kit-app-template/deps/host-deps.packman.xml
+[2025-11-10 18:13:32,600][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release
+[2025-11-10 18:13:34,075][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_precache_exts@None. args: ['precache_exts', '-c', 'release']
+[2025-11-10 18:13:34,077][INFO][omni.repo.precache_exts.run:315] precaching app: G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit
+[2025-11-10 18:13:34,078][INFO][omni.repo.man.utils.run_process:241] running process: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1
+[2025-11-10 18:13:36,546][ERROR][omni.repo.man.utils.run_process:264] error running: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1, code: 55, message: ""
+[2025-11-10 18:13:36,563][ERROR][omni.repo.man.exceptions_utils.print_log:182] SystemExit exception stack trace dumped to logfile G:/Vision_Example_1/kit-app-template/_repo/repo.log. Stacks dumped to console via `--verbose` or `--tracebacks`. 
+SystemExit: 55
+[2025-11-10 18:13:36,565][ERROR][omni.repo.emit_stack_to_logfile:156] SystemExit encountered while running repo_precache_exts via ['G:\\Vision_Example_1\\kit-app-template\\tools\\repoman\\repoman.py', 'precache_exts', '-c', 'release']:
+Traceback (most recent call last):
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 138, in run
+    options.func(options)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 90, in <lambda>
+    func=lambda args, func=func, config=self.merged_tool_config: func(args, config),
+  File "G:/packman-repo/chk/kit-kernel/108.0.0+feature.221586.5941509b.gl.windows-x86_64.release/dev/tools/repoman/precache_exts.py", line 481, in run_repo_tool
+    run(tool_config, options, repo_folders["root"], platform_host)
+  File "G:/packman-repo/chk/kit-kernel/108.0.0+feature.221586.5941509b.gl.windows-x86_64.release/dev/tools/repoman/precache_exts.py", line 434, in run
+    sys.exit(returncode)
+SystemExit: 55
+[2025-11-10 18:13:36,621][ERROR][omni.repo.man.utils.run_process:264] error running: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release, code: 55, message: ""
+[2025-11-10 18:13:36,625][WARNING][omni.repo.man.version.get_tool_version:312] Retrieving repo_build version via VERSION file.
+[2025-11-10 18:13:36,626][ERROR][omni.repo.man.exceptions_utils.print_log:182] SystemExit exception stack trace dumped to logfile G:/Vision_Example_1/kit-app-template/_repo/repo.log. Stacks dumped to console via `--verbose` or `--tracebacks`. 
+SystemExit: 55
+[2025-11-10 18:13:36,628][ERROR][omni.repo.emit_stack_to_logfile:156] SystemExit encountered while running repo_build via ['G:\\Vision_Example_1\\kit-app-template\\tools\\repoman\\repoman.py', 'build']:
+Traceback (most recent call last):
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 138, in run
+    options.func(options)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 90, in <lambda>
+    func=lambda args, func=func, config=self.merged_tool_config: func(args, config),
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\main.py", line 1576, in run_repo_tool
+    run_build(options, repo_folders, None, config)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\utils.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\main.py", line 1124, in run_build
+    process_after_pull_commands(
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\dependencies.py", line 364, in process_after_pull_commands
+    run_command(command, repo_folders, platform_target, config, extra_tokens, print_name="After Pull Commands")
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\utils.py", line 23, in run_command
+    run_process(command, exit_on_error=True)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\utils.py", line 266, in run_process
+    sys.exit(returncode)
+SystemExit: 55
+[2025-11-10 18:14:08,347][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build@1.13.2. args: ['build']
+[2025-11-10 18:14:08,350][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target' set to 'windows-x86_64'
+[2025-11-10 18:14:08,350][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target_abi' set to 'windows-x86_64'
+[2025-11-10 18:14:08,351][INFO][omni.repo.man.utils.run_process:241] running process: powershell -Command "New-Item -ItemType Directory -Path G:/Vision_Example_1/kit-app-template/source/apps -ErrorAction SilentlyContinue" ; "Write-Host 'Done'"
+[2025-11-10 18:14:08,536][INFO][omni.repo.build.dependencies.pull_files:275] Skipping project file (doesn't exist): G:/Vision_Example_1/kit-app-template/deps/host-deps.packman.xml
+[2025-11-10 18:14:08,550][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release
+[2025-11-10 18:14:10,003][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_precache_exts@None. args: ['precache_exts', '-c', 'release']
+[2025-11-10 18:14:10,005][INFO][omni.repo.precache_exts.run:315] precaching app: G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit
+[2025-11-10 18:14:10,006][INFO][omni.repo.man.utils.run_process:241] running process: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1
+[2025-11-10 18:14:12,780][ERROR][omni.repo.man.utils.run_process:264] error running: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1, code: 55, message: ""
+[2025-11-10 18:14:12,791][ERROR][omni.repo.man.exceptions_utils.print_log:182] SystemExit exception stack trace dumped to logfile G:/Vision_Example_1/kit-app-template/_repo/repo.log. Stacks dumped to console via `--verbose` or `--tracebacks`. 
+SystemExit: 55
+[2025-11-10 18:14:12,793][ERROR][omni.repo.emit_stack_to_logfile:156] SystemExit encountered while running repo_precache_exts via ['G:\\Vision_Example_1\\kit-app-template\\tools\\repoman\\repoman.py', 'precache_exts', '-c', 'release']:
+Traceback (most recent call last):
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 138, in run
+    options.func(options)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 90, in <lambda>
+    func=lambda args, func=func, config=self.merged_tool_config: func(args, config),
+  File "G:/packman-repo/chk/kit-kernel/108.0.0+feature.221586.5941509b.gl.windows-x86_64.release/dev/tools/repoman/precache_exts.py", line 481, in run_repo_tool
+    run(tool_config, options, repo_folders["root"], platform_host)
+  File "G:/packman-repo/chk/kit-kernel/108.0.0+feature.221586.5941509b.gl.windows-x86_64.release/dev/tools/repoman/precache_exts.py", line 434, in run
+    sys.exit(returncode)
+SystemExit: 55
+[2025-11-10 18:14:12,848][ERROR][omni.repo.man.utils.run_process:264] error running: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release, code: 55, message: ""
+[2025-11-10 18:14:12,853][WARNING][omni.repo.man.version.get_tool_version:312] Retrieving repo_build version via VERSION file.
+[2025-11-10 18:14:12,855][ERROR][omni.repo.man.exceptions_utils.print_log:182] SystemExit exception stack trace dumped to logfile G:/Vision_Example_1/kit-app-template/_repo/repo.log. Stacks dumped to console via `--verbose` or `--tracebacks`. 
+SystemExit: 55
+[2025-11-10 18:14:12,856][ERROR][omni.repo.emit_stack_to_logfile:156] SystemExit encountered while running repo_build via ['G:\\Vision_Example_1\\kit-app-template\\tools\\repoman\\repoman.py', 'build']:
+Traceback (most recent call last):
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 138, in run
+    options.func(options)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\entry.py", line 90, in <lambda>
+    func=lambda args, func=func, config=self.merged_tool_config: func(args, config),
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\main.py", line 1576, in run_repo_tool
+    run_build(options, repo_folders, None, config)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\utils.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\main.py", line 1124, in run_build
+    process_after_pull_commands(
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\dependencies.py", line 364, in process_after_pull_commands
+    run_command(command, repo_folders, platform_target, config, extra_tokens, print_name="After Pull Commands")
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_build\omni\repo\build\utils.py", line 23, in run_command
+    run_process(command, exit_on_error=True)
+  File "G:\Vision_Example_1\kit-app-template\_repo\deps\repo_man\omni\repo\man\utils.py", line 266, in run_process
+    sys.exit(returncode)
+SystemExit: 55
+[2025-11-10 18:17:10,973][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build@1.13.2. args: ['build']
+[2025-11-10 18:17:10,974][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target' set to 'windows-x86_64'
+[2025-11-10 18:17:10,974][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target_abi' set to 'windows-x86_64'
+[2025-11-10 18:17:10,975][INFO][omni.repo.man.utils.run_process:241] running process: powershell -Command "New-Item -ItemType Directory -Path G:/Vision_Example_1/kit-app-template/source/apps -ErrorAction SilentlyContinue" ; "Write-Host 'Done'"
+[2025-11-10 18:17:11,165][INFO][omni.repo.build.dependencies.pull_files:275] Skipping project file (doesn't exist): G:/Vision_Example_1/kit-app-template/deps/host-deps.packman.xml
+[2025-11-10 18:17:11,180][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release
+[2025-11-10 18:17:12,704][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_precache_exts@None. args: ['precache_exts', '-c', 'release']
+[2025-11-10 18:17:12,707][INFO][omni.repo.precache_exts.run:315] precaching app: G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit
+[2025-11-10 18:17:12,708][INFO][omni.repo.man.utils.run_process:241] running process: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1
+[2025-11-10 18:17:17,410][INFO][omni.repo.build.pippull.pull_pip_dependencies:403] Skip pip pull of because is most recent config (['G:/Vision_Example_1/kit-app-template/tools/deps/pip.toml']) is older than 'G:/Vision_Example_1/kit-app-template/_build\.lastpippull'.
+[2025-11-10 18:17:17,413][INFO][omni.repo.build.build.generate_projects:263] generating project from: G:/Vision_Example_1/kit-app-template/premake5.lua
+[2025-11-10 18:17:17,413][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/_build/host-deps\premake\bin\premake5.exe --file=G:/Vision_Example_1/kit-app-template/premake5.lua no-compile --platform-host=windows-x86_64 --scripts=G:\packman-repo\chk\repo_build\1.13.2\lua --platform-target=windows-x86_64 --linux-x86_64-cxx11-abi=True --solution-name=kit-app-template
+[2025-11-10 18:17:19,311][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_kit_pull_extensions@1.10.0. args: ['pull_extensions', 'setup']
+[2025-11-10 18:17:19,312][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'debug'
+[2025-11-10 18:17:19,324][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'release'
+[2025-11-10 18:17:20,877][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/debug/VERSION']
+[2025-11-10 18:17:20,887][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-11-10 18:17:20,887][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-11-10 18:17:20,915][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-11-10 18:17:20,916][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-10 18:17:20,952][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-10 18:17:20,995][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-11-10 18:17:20,996][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-10 18:17:21,029][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-10 18:17:21,068][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-11-10 18:17:21,069][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-11-10 18:17:21,072][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\debug\VERSION'
+[2025-11-10 18:17:22,606][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release/VERSION']
+[2025-11-10 18:17:22,607][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-11-10 18:17:22,607][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-11-10 18:17:22,632][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-11-10 18:17:22,632][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-10 18:17:22,670][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-10 18:17:22,710][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-11-10 18:17:22,710][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-10 18:17:22,742][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-10 18:17:22,779][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-11-10 18:17:22,779][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-11-10 18:17:22,783][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\VERSION'
+[2025-11-10 18:17:22,862][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 0 files took: 0.000 milliseconds.
+[2025-11-10 18:17:22,862][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 0 folders took: 0.000 milliseconds.
+[2025-11-10 18:17:22,876][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 8 files took: 13.693 milliseconds.
+[2025-11-10 18:17:22,882][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 8 folders took: 6.000 milliseconds.
+[2025-11-10 18:17:40,337][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-11 09:08:55,333][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-11 16:40:10,789][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-11 16:52:18,652][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-12 12:11:22,782][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-12 12:43:56,179][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-12 17:08:22,985][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build@1.13.2. args: ['build']
+[2025-11-12 17:08:22,985][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target' set to 'windows-x86_64'
+[2025-11-12 17:08:22,986][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target_abi' set to 'windows-x86_64'
+[2025-11-12 17:08:22,986][INFO][omni.repo.man.utils.run_process:241] running process: powershell -Command "New-Item -ItemType Directory -Path G:/Vision_Example_1/kit-app-template/source/apps -ErrorAction SilentlyContinue" ; "Write-Host 'Done'"
+[2025-11-12 17:08:23,196][INFO][omni.repo.build.dependencies.pull_files:275] Skipping project file (doesn't exist): G:/Vision_Example_1/kit-app-template/deps/host-deps.packman.xml
+[2025-11-12 17:08:23,239][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release
+[2025-11-12 17:08:24,802][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_precache_exts@None. args: ['precache_exts', '-c', 'release']
+[2025-11-12 17:08:24,804][INFO][omni.repo.precache_exts.run:315] precaching app: G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit
+[2025-11-12 17:08:24,805][INFO][omni.repo.man.utils.run_process:241] running process: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1
+[2025-11-12 17:08:27,599][INFO][omni.repo.build.pippull.pull_pip_dependencies:403] Skip pip pull of because is most recent config (['G:/Vision_Example_1/kit-app-template/tools/deps/pip.toml']) is older than 'G:/Vision_Example_1/kit-app-template/_build\.lastpippull'.
+[2025-11-12 17:08:27,601][INFO][omni.repo.build.build.generate_projects:263] generating project from: G:/Vision_Example_1/kit-app-template/premake5.lua
+[2025-11-12 17:08:27,601][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/_build/host-deps\premake\bin\premake5.exe --file=G:/Vision_Example_1/kit-app-template/premake5.lua no-compile --platform-host=windows-x86_64 --scripts=G:\packman-repo\chk\repo_build\1.13.2\lua --platform-target=windows-x86_64 --linux-x86_64-cxx11-abi=True --solution-name=kit-app-template
+[2025-11-12 17:08:29,534][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_kit_pull_extensions@1.10.0. args: ['pull_extensions', 'setup']
+[2025-11-12 17:08:29,535][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'debug'
+[2025-11-12 17:08:29,547][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'release'
+[2025-11-12 17:08:31,201][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/debug/VERSION']
+[2025-11-12 17:08:31,202][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-11-12 17:08:31,202][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-11-12 17:08:31,229][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-11-12 17:08:31,230][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-12 17:08:31,268][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-12 17:08:31,308][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-11-12 17:08:31,308][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-12 17:08:31,343][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-12 17:08:31,384][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-11-12 17:08:31,384][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-11-12 17:08:31,387][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\debug\VERSION'
+[2025-11-12 17:08:32,939][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release/VERSION']
+[2025-11-12 17:08:32,939][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-11-12 17:08:32,940][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-11-12 17:08:32,964][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-11-12 17:08:32,965][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-12 17:08:33,004][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-12 17:08:33,042][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-11-12 17:08:33,043][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-12 17:08:33,078][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-12 17:08:33,118][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-11-12 17:08:33,118][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-11-12 17:08:33,121][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\VERSION'
+[2025-11-12 17:08:33,211][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 0 files took: 0.000 milliseconds.
+[2025-11-12 17:08:33,212][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 0 folders took: 0.000 milliseconds.
+[2025-11-12 17:08:33,227][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 8 files took: 5.089 milliseconds.
+[2025-11-12 17:08:33,232][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 8 folders took: 4.969 milliseconds.
+[2025-11-12 17:08:44,518][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-12 17:17:44,172][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-12 17:19:55,420][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build@1.13.2. args: ['build']
+[2025-11-12 17:19:55,421][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target' set to 'windows-x86_64'
+[2025-11-12 17:19:55,421][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target_abi' set to 'windows-x86_64'
+[2025-11-12 17:19:55,422][INFO][omni.repo.man.utils.run_process:241] running process: powershell -Command "New-Item -ItemType Directory -Path G:/Vision_Example_1/kit-app-template/source/apps -ErrorAction SilentlyContinue" ; "Write-Host 'Done'"
+[2025-11-12 17:19:55,633][INFO][omni.repo.build.dependencies.pull_files:275] Skipping project file (doesn't exist): G:/Vision_Example_1/kit-app-template/deps/host-deps.packman.xml
+[2025-11-12 17:19:55,647][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release
+[2025-11-12 17:19:57,157][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_precache_exts@None. args: ['precache_exts', '-c', 'release']
+[2025-11-12 17:19:57,160][INFO][omni.repo.precache_exts.run:315] precaching app: G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit
+[2025-11-12 17:19:57,161][INFO][omni.repo.man.utils.run_process:241] running process: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1
+[2025-11-12 17:19:57,632][INFO][omni.repo.build.pippull.pull_pip_dependencies:403] Skip pip pull of because is most recent config (['G:/Vision_Example_1/kit-app-template/tools/deps/pip.toml']) is older than 'G:/Vision_Example_1/kit-app-template/_build\.lastpippull'.
+[2025-11-12 17:19:57,633][INFO][omni.repo.build.build.generate_projects:263] generating project from: G:/Vision_Example_1/kit-app-template/premake5.lua
+[2025-11-12 17:19:57,633][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/_build/host-deps\premake\bin\premake5.exe --file=G:/Vision_Example_1/kit-app-template/premake5.lua no-compile --platform-host=windows-x86_64 --scripts=G:\packman-repo\chk\repo_build\1.13.2\lua --platform-target=windows-x86_64 --linux-x86_64-cxx11-abi=True --solution-name=kit-app-template
+[2025-11-12 17:19:59,280][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_kit_pull_extensions@1.10.0. args: ['pull_extensions', 'setup']
+[2025-11-12 17:19:59,281][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'debug'
+[2025-11-12 17:19:59,293][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'release'
+[2025-11-12 17:20:00,861][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/debug/VERSION']
+[2025-11-12 17:20:00,862][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-11-12 17:20:00,863][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-11-12 17:20:00,894][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-11-12 17:20:00,895][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-12 17:20:00,933][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-12 17:20:00,972][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-11-12 17:20:00,973][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-12 17:20:01,007][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-12 17:20:01,049][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-11-12 17:20:01,050][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-11-12 17:20:01,053][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\debug\VERSION'
+[2025-11-12 17:20:02,616][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release/VERSION']
+[2025-11-12 17:20:02,616][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-11-12 17:20:02,616][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-11-12 17:20:02,641][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-11-12 17:20:02,642][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-12 17:20:02,680][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-12 17:20:02,720][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-11-12 17:20:02,720][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-12 17:20:02,754][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-12 17:20:02,794][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-11-12 17:20:02,795][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-11-12 17:20:02,798][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\VERSION'
+[2025-11-12 17:20:02,897][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 0 files took: 0.000 milliseconds.
+[2025-11-12 17:20:02,897][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 0 folders took: 0.000 milliseconds.
+[2025-11-12 17:20:02,902][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 8 files took: 4.000 milliseconds.
+[2025-11-12 17:20:02,907][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 8 folders took: 5.002 milliseconds.
+[2025-11-12 17:20:13,523][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-15 16:13:56,924][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-25 18:38:27,875][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build@1.13.2. args: ['build']
+[2025-11-25 18:38:27,876][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target' set to 'windows-x86_64'
+[2025-11-25 18:38:27,877][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target_abi' set to 'windows-x86_64'
+[2025-11-25 18:38:27,877][INFO][omni.repo.man.utils.run_process:241] running process: powershell -Command "New-Item -ItemType Directory -Path G:/Vision_Example_1/kit-app-template/source/apps -ErrorAction SilentlyContinue" ; "Write-Host 'Done'"
+[2025-11-25 18:38:28,078][INFO][omni.repo.build.dependencies.pull_files:275] Skipping project file (doesn't exist): G:/Vision_Example_1/kit-app-template/deps/host-deps.packman.xml
+[2025-11-25 18:38:28,102][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release
+[2025-11-25 18:38:29,569][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_precache_exts@None. args: ['precache_exts', '-c', 'release']
+[2025-11-25 18:38:29,571][INFO][omni.repo.precache_exts.run:315] precaching app: G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit
+[2025-11-25 18:38:29,573][INFO][omni.repo.man.utils.run_process:241] running process: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1
+[2025-11-25 18:38:32,223][INFO][omni.repo.build.pippull.pull_pip_dependencies:403] Skip pip pull of because is most recent config (['G:/Vision_Example_1/kit-app-template/tools/deps/pip.toml']) is older than 'G:/Vision_Example_1/kit-app-template/_build\.lastpippull'.
+[2025-11-25 18:38:32,224][INFO][omni.repo.build.build.generate_projects:263] generating project from: G:/Vision_Example_1/kit-app-template/premake5.lua
+[2025-11-25 18:38:32,224][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/_build/host-deps\premake\bin\premake5.exe --file=G:/Vision_Example_1/kit-app-template/premake5.lua no-compile --platform-host=windows-x86_64 --scripts=G:\packman-repo\chk\repo_build\1.13.2\lua --platform-target=windows-x86_64 --linux-x86_64-cxx11-abi=True --solution-name=kit-app-template
+[2025-11-25 18:38:34,087][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_kit_pull_extensions@1.10.0. args: ['pull_extensions', 'setup']
+[2025-11-25 18:38:34,088][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'debug'
+[2025-11-25 18:38:34,100][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'release'
+[2025-11-25 18:38:35,616][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/debug/VERSION']
+[2025-11-25 18:38:35,616][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-11-25 18:38:35,617][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-11-25 18:38:35,640][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-11-25 18:38:35,641][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-25 18:38:35,677][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-25 18:38:35,714][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-11-25 18:38:35,715][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-25 18:38:35,747][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-25 18:38:35,784][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-11-25 18:38:35,784][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-11-25 18:38:35,788][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\debug\VERSION'
+[2025-11-25 18:38:37,279][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release/VERSION']
+[2025-11-25 18:38:37,280][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-11-25 18:38:37,280][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-11-25 18:38:37,303][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-11-25 18:38:37,304][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-25 18:38:37,340][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-25 18:38:37,378][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-11-25 18:38:37,378][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-25 18:38:37,411][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-25 18:38:37,448][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-11-25 18:38:37,448][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-11-25 18:38:37,461][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\VERSION'
+[2025-11-25 18:38:37,542][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 0 files took: 0.000 milliseconds.
+[2025-11-25 18:38:37,542][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 0 folders took: 0.000 milliseconds.
+[2025-11-25 18:38:37,547][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 8 files took: 4.003 milliseconds.
+[2025-11-25 18:38:37,552][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 8 folders took: 4.002 milliseconds.
+[2025-11-25 18:39:11,431][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-25 18:52:17,176][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build@1.13.2. args: ['build']
+[2025-11-25 18:52:17,177][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target' set to 'windows-x86_64'
+[2025-11-25 18:52:17,177][INFO][omni.repo.man.configuration.set_token:231] Token: 'platform_target_abi' set to 'windows-x86_64'
+[2025-11-25 18:52:17,177][INFO][omni.repo.man.utils.run_process:241] running process: powershell -Command "New-Item -ItemType Directory -Path G:/Vision_Example_1/kit-app-template/source/apps -ErrorAction SilentlyContinue" ; "Write-Host 'Done'"
+[2025-11-25 18:52:17,365][INFO][omni.repo.build.dependencies.pull_files:275] Skipping project file (doesn't exist): G:/Vision_Example_1/kit-app-template/deps/host-deps.packman.xml
+[2025-11-25 18:52:17,379][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/repo.bat precache_exts -c release
+[2025-11-25 18:52:18,817][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_precache_exts@None. args: ['precache_exts', '-c', 'release']
+[2025-11-25 18:52:18,820][INFO][omni.repo.precache_exts.run:315] precaching app: G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit
+[2025-11-25 18:52:18,821][INFO][omni.repo.man.utils.run_process:241] running process: G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\kit\kit.exe G:\Vision_Example_1\kit-app-template\source\apps\my_company.my_usd_composer.kit --allow-root --portable --ext-precache-mode --/crashreporter/gatherUserStory=0 --/app/settings/persistent=0 --/app/settings/loadUserConfig=0 --/app/extensions/generateVersionLock=1 --/app/extensions/parallelPullEnabled=1 --/app/enableStdoutOutput=1 --/app/extensions/detailedSolverExplanation=1 --/app/extensions/registryEnabled=1 --/app/extensions/mkdirExtFolders=0 --/app/extensions/registryCacheFull='G:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\extscache' --/log/flushStandardStreamOutput=1 --/exts/omni.kit.registry.nucleus/registries/0/name=\"kit/default\" --/exts/omni.kit.registry.nucleus/registries/0/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/${kit_version_major}/shared\" --/exts/omni.kit.registry.nucleus/registries/1/name=\"kit/sdk\" --/exts/omni.kit.registry.nucleus/registries/1/url=\"https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}\" --/exts/omni.kit.registry.nucleus/registries/2/name=\"kit/community\" --/exts/omni.kit.registry.nucleus/registries/2/url=\"https://dw290v42wisod.cloudfront.net/exts/kit/community\" --/app/extensions/target/config=release --ext-folder G:\Vision_Example_1\kit-app-template\source\extensions --ext-folder G:\Vision_Example_1\kit-app-template\source\apps --portable-root G:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release --/app/extensions/generateVersionLockSkipLocalExts=1
+[2025-11-25 18:52:19,267][INFO][omni.repo.build.pippull.pull_pip_dependencies:403] Skip pip pull of because is most recent config (['G:/Vision_Example_1/kit-app-template/tools/deps/pip.toml']) is older than 'G:/Vision_Example_1/kit-app-template/_build\.lastpippull'.
+[2025-11-25 18:52:19,268][INFO][omni.repo.build.build.generate_projects:263] generating project from: G:/Vision_Example_1/kit-app-template/premake5.lua
+[2025-11-25 18:52:19,268][INFO][omni.repo.man.utils.run_process:241] running process: G:/Vision_Example_1/kit-app-template/_build/host-deps\premake\bin\premake5.exe --file=G:/Vision_Example_1/kit-app-template/premake5.lua no-compile --platform-host=windows-x86_64 --scripts=G:\packman-repo\chk\repo_build\1.13.2\lua --platform-target=windows-x86_64 --linux-x86_64-cxx11-abi=True --solution-name=kit-app-template
+[2025-11-25 18:52:20,862][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_kit_pull_extensions@1.10.0. args: ['pull_extensions', 'setup']
+[2025-11-25 18:52:20,863][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'debug'
+[2025-11-25 18:52:20,876][INFO][omni.repo.man.configuration.set_token:231] Token: 'config' set to 'release'
+[2025-11-25 18:52:22,395][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/debug/VERSION']
+[2025-11-25 18:52:22,396][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-11-25 18:52:22,396][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-11-25 18:52:22,420][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-11-25 18:52:22,420][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-25 18:52:22,457][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-25 18:52:22,494][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-11-25 18:52:22,494][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-25 18:52:22,526][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-25 18:52:22,565][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-11-25 18:52:22,565][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-11-25 18:52:22,568][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\debug\VERSION'
+[2025-11-25 18:52:24,094][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_build_number@1.88.2. args: ['build_number', '-o', 'g:/Vision_Example_1/kit-app-template/_build/windows-x86_64/release/VERSION']
+[2025-11-25 18:52:24,095][INFO][omni.repo.man.nvenv.get_git_hash:352] Getting Git hash for directory g:\Vision_Example_1\kit-app-template
+[2025-11-25 18:52:24,095][INFO][omni.repo.man.nvenv.find_git_path:186] Searching for the location of Git
+[2025-11-25 18:52:24,118][INFO][omni.repo.man.nvenv.find_git_path:249] Git location: git
+[2025-11-25 18:52:24,118][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-25 18:52:24,156][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --short=8 HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-25 18:52:24,192][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: 72a92618
+
+	stderr: 
+[2025-11-25 18:52:24,193][INFO][omni.repo.man.utils.run_process_return_output:301] running process: git rev-parse --git-dir
+[2025-11-25 18:52:24,226][INFO][omni.repo.man.nvenv.execute_git:284] Calling Git with args: "rev-parse --abbrev-ref HEAD". Try: 1. cwd: 'g:\Vision_Example_1\kit-app-template'
+[2025-11-25 18:52:24,263][INFO][omni.repo.man.nvenv.execute_git:295] git call result:
+	return code:0
+	stdout: main
+
+	stderr: 
+[2025-11-25 18:52:24,264][INFO][omni.repo.man.build_number.print_log:182] Build number: '108.0+main.0.72a92618.local'
+[2025-11-25 18:52:24,267][INFO][omni.repo.man.build_number.print_log:182] Written to file: 'g:\Vision_Example_1\kit-app-template\_build\windows-x86_64\release\VERSION'
+[2025-11-25 18:52:24,353][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 0 files took: 0.000 milliseconds.
+[2025-11-25 18:52:24,353][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 0 folders took: 0.000 milliseconds.
+[2025-11-25 18:52:24,357][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:532] Copy of 8 files took: 2.999 milliseconds.
+[2025-11-25 18:52:24,363][INFO][omni.repo.man.fileutils.copy_and_link_using_dict:542] Creating links of 8 folders took: 5.000 milliseconds.
+[2025-11-25 18:52:34,868][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-25 18:55:53,970][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-25 19:00:30,736][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-25 19:13:41,433][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-25 19:17:59,620][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-25 19:22:34,814][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-25 19:31:56,279][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-25 19:42:25,635][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-25 20:06:22,557][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-25 20:18:10,250][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-25 20:27:16,877][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-26 15:20:31,931][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-11-26 15:53:02,139][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-03 16:28:17,211][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-03 17:38:37,614][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-03 20:21:15,570][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-05 14:01:42,571][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-05 14:18:01,785][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-05 14:22:06,034][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-05 15:01:22,685][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-05 15:21:43,636][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-05 15:54:46,601][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-05 16:05:01,133][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-09 13:27:27,683][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-09 13:39:29,852][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-09 13:48:19,418][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-09 14:03:20,067][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-09 14:04:31,982][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-10 12:15:53,500][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-10 12:25:44,688][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-10 12:30:05,953][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-10 12:58:13,378][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-10 14:54:28,786][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-10 14:59:15,934][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-10 15:07:15,219][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-10 15:39:16,487][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-10 15:47:51,834][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
+[2025-12-10 16:05:43,538][INFO][omni.repo.man.entry.run:133] Running repo tool: repo_launch@None. args: ['launch']
