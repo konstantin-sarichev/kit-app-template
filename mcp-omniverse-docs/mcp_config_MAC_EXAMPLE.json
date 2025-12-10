@@ -1,0 +1,27 @@
+{
+  "_comment": "Example MCP configuration for macOS",
+  "_instructions": [
+    "1. Find your Python path: Run 'which python3' in Terminal",
+    "2. Note where you extracted mcp-omniverse-docs folder",
+    "3. Replace the paths below with YOUR actual paths",
+    "4. Copy this configuration to your Cursor mcp.json file",
+    "5. Restart Cursor completely"
+  ],
+  "mcpServers": {
+    "omniverse-docs": {
+      "command": "/usr/local/bin/python3",
+      "args": [
+        "-m",
+        "src.server"
+      ],
+      "cwd": "/Users/yourname/Tools/mcp-omniverse-docs",
+      "env": {
+        "OMNIVERSE_DOCS_CACHE_HOURS": "24",
+        "OMNIVERSE_DOCS_DEBUG": "0"
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,62 @@
+{
+  "name": "Standard Machine Vision Lenses",
+  "description": "Preset configurations for standard fixed focal length lenses",
+  "presets": [
+    {
+      "id": "mv_8mm_f1.4",
+      "name": "8mm f/1.4 Machine Vision",
+      "description": "Wide angle machine vision lens",
+      "parameters": {
+        "focal_length_mm": 8.0,
+        "f_number": 1.4,
+        "field_of_view_deg": 67.0,
+        "is_telecentric": false
+      }
+    },
+    {
+      "id": "mv_12mm_f1.4",
+      "name": "12mm f/1.4 Machine Vision",
+      "description": "Standard machine vision lens",
+      "parameters": {
+        "focal_length_mm": 12.0,
+        "f_number": 1.4,
+        "field_of_view_deg": 48.0,
+        "is_telecentric": false
+      }
+    },
+    {
+      "id": "mv_25mm_f1.4",
+      "name": "25mm f/1.4 Machine Vision",
+      "description": "Medium focal length machine vision lens",
+      "parameters": {
+        "focal_length_mm": 25.0,
+        "f_number": 1.4,
+        "field_of_view_deg": 25.0,
+        "is_telecentric": false
+      }
+    },
+    {
+      "id": "mv_50mm_f2.8",
+      "name": "50mm f/2.8 Machine Vision",
+      "description": "Standard 50mm machine vision lens",
+      "parameters": {
+        "focal_length_mm": 50.0,
+        "f_number": 2.8,
+        "field_of_view_deg": 12.5,
+        "is_telecentric": false
+      }
+    },
+    {
+      "id": "mv_75mm_f2.8",
+      "name": "75mm f/2.8 Machine Vision",
+      "description": "Long focal length machine vision lens",
+      "parameters": {
+        "focal_length_mm": 75.0,
+        "f_number": 2.8,
+        "field_of_view_deg": 8.5,
+        "is_telecentric": false
+      }
+    }
+  ]
+}
+

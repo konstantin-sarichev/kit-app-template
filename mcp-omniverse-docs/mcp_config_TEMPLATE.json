@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "omniverse-docs": {
+      "command": "REPLACE_WITH_YOUR_PYTHON_PATH",
+      "args": [
+        "-m",
+        "src.server"
+      ],
+      "cwd": "REPLACE_WITH_INSTALLATION_PATH",
+      "env": {
+        "OMNIVERSE_DOCS_CACHE_HOURS": "24",
+        "OMNIVERSE_DOCS_DEBUG": "0"
+      }
+    }
+  }
+}
+
+
+

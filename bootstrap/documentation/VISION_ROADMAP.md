@@ -1,0 +1,549 @@
+# Vision DT Development Roadmap
+
+## Overview
+
+This document summarizes the current breakthroughs in the Vision Digital Twin lighting and optics system, and documents features that still need to be developed for complete physical accuracy simulation.
+
+---
+
+## Part 1: Current Breakthroughs (Implemented)
+
+### 1.1 Bootstrap System ✅
+
+**Status:** Production Ready
+
+Automatic stage configuration system that runs on every stage open:
+- Sets millimeter units (metersPerUnit = 0.001)
+- Adds Vision DT attributes to all lights
+- Starts real-time watchers for parameter sync
+- Modular capability architecture (add new features as numbered .py files)
+
+**Key Files:**
+- `bootstrap/loader.py` — Core orchestration
+- `bootstrap/capabilities/` — Modular capability scripts
+
+---
+
+### 1.2 Spectral Power Distribution (SPD) System ✅
+
+**Status:** Production Ready
+
+Three modes for defining light color from spectral data:
+
+| Mode | Description | Use Case |
+|------|-------------|----------|
+| `gaussian` | Peak wavelength + FWHM bandwidth | Quick LED simulation |
+| `csv` | Load SPD from CSV file | Real datasheet curves |
+| `manual` | Direct wavelength/intensity arrays | Custom profiles |
+
+**Technical Implementation:**
+- Full CIE 1931 2° Standard Observer color matching (380-780nm, 5nm steps)
+- XYZ to linear sRGB conversion matrix
+- Gaussian SPD approximation from peak λ + FWHM
+- `whiteMix` parameter for realistic white LED simulation
+
+**Key Files:**
+- `bootstrap/utils/spectral.py` — CIE integration, SpectralCurve class
+- `bootstrap/lighting-profiles/spd/` — CSV library (D65, warm/cool white, incandescent)
+
+**Attributes:**
+```
+visiondt:led:enabled           → Enable LED color mode
+visiondt:led:spdMode           → "gaussian", "csv", or "manual"
+visiondt:led:peakWavelength    → Peak λ (nm)
+visiondt:led:spectralBandwidth → FWHM (nm)
+visiondt:led:whiteMix          → Blend with white (0-1)
+visiondt:led:spdCsvPath        → Path to CSV file
+visiondt:led:computedColor     → Read-only calculated RGB
+```
+
+---
+
+### 1.3 Photometric Luminosity System ✅
+
+**Status:** Production Ready
+
+Converts real LED datasheet brightness (mcd, mlm) to Omniverse intensity:
+
+**Conversion Pipeline:**
+```
+mcd (millicandela) → nits (cd/m²) → Omniverse intensity + exposure
+```
+
+**Key Formulas:**
+- `nits = mcd / (emitter_area_mm² × 1e-6)`
+- `intensity = clamp(nits, 0.01, 100)`
+- `exposure = log2(nits / intensity)`
+
+**Key Files:**
+- `bootstrap/utils/luminous.py` — Photometric conversions
+
+**Attributes:**
+```
+visiondt:led:useLuminousIntensity → Enable datasheet brightness
+visiondt:led:luminousIntensity    → Value in mcd
+visiondt:led:luminousFlux         → Value in mlm
+visiondt:led:emitterWidthMm       → Die width (mm)
+visiondt:led:emitterHeightMm      → Die height (mm)
+visiondt:led:currentRatio         → Dimming factor (0-1)
+visiondt:led:computedNits         → Read-only calculated luminance
+visiondt:led:computedIntensity    → Read-only Omniverse intensity
+visiondt:led:computedExposure     → Read-only Omniverse exposure
+```
+
+---
+
+### 1.4 Multi-Spectrum Kelvin System ✅
+
+**Status:** Production Ready
+
+Per-channel color temperature control using Kelvin values:
+
+**Attributes:**
+```
+visiondt:overallTemperature → Master temperature (K)
+visiondt:redTemperature     → Red channel (K)
+visiondt:greenTemperature   → Green channel (K)
+visiondt:blueTemperature    → Blue channel (K)
+```
+
+**Algorithm:** Tanner Helland Kelvin-to-RGB with per-channel multiplication
+
+---
+
+### 1.5 Real-Time Synchronization ✅
+
+**Status:** Production Ready
+
+Three watcher modules for live parameter updates:
+
+| Watcher | Purpose |
+|---------|---------|
+| `LightWatcher` | Auto-add Vision DT attributes to newly created lights |
+| `ColorSync` | Sync Kelvin temperature changes to `inputs:color` |
+| `LEDColorSync` | Sync SPD/luminosity changes to Omniverse light properties |
+
+**Key Feature:** Vision DT settings **always override** Omniverse defaults when enabled
+
+---
+
+### 1.6 LED Presets Library ✅
+
+**Status:** Production Ready
+
+Built-in LED presets for common wavelengths:
+
+| Preset | Wavelength | Description |
+|--------|------------|-------------|
+| `uv_365` | 365nm | UV-A LED |
+| `uv_385` | 385nm | Near-UV LED |
+| `blue_450` | 450nm | Blue LED |
+| `cyan_505` | 505nm | Cyan LED |
+| `green_520` | 520nm | Green LED |
+| `green_530` | 530nm | True Green (OSRAM LT QH9G) |
+| `lime_555` | 555nm | Lime LED |
+| `amber_590` | 590nm | Amber LED |
+| `red_625` | 625nm | Red LED |
+| `red_660` | 660nm | Deep Red LED |
+| `ir_850` | 850nm | Near-IR LED |
+| `ir_940` | 940nm | IR LED |
+
+**OSRAM LT QH9G Brightness Groups:**
+- `osram_lt_qh9g` (Q2): 90 mcd
+- `osram_lt_qh9g_r1`: 126 mcd
+- `osram_lt_qh9g_s1`: 200 mcd
+- `osram_lt_qh9g_t2`: 400 mcd
+
+---
+
+### 1.7 SPD File Library ✅
+
+**Status:** Production Ready
+
+Standard spectral profiles in `_build/bootstrap/lighting-profiles/spd/`:
+
+| File | Description |
+|------|-------------|
+| `D65_daylight_6500K.csv` | CIE D65 standard daylight |
+| `white_LED_cool_5000K.csv` | Phosphor white LED (cool) |
+| `white_LED_warm_3000K.csv` | Phosphor white LED (warm) |
+| `flat_equal_energy_white.csv` | Equal power reference |
+| `incandescent_2700K.csv` | Black-body radiator |
+
+---
+
+## Part 2: Features To Be Developed
+
+### 2.0 Zemax Lens Integration ✅ PHASE 1 COMPLETE
+
+**Priority:** Critical — Foundation for all lens/camera parameters
+
+**What It Is:**
+Import Zemax lens files (`.ZMX`, `.ZAR`) to create a lens library. All lens optical parameters come from Zemax — this is the **single source of truth** for lens data.
+
+**Data Flow:**
+```
+Zemax File (.zmx) → Parser → lens_data.json → Lens Library → Camera Attributes
+```
+
+**What Zemax Provides:**
+- Focal length, F-number, working distance
+- Distortion coefficients (radial, tangential)
+- MTF curves (sagittal, tangential, field-dependent)
+- Chromatic aberration data
+- Telecentricity parameters
+- PSF data (optional export)
+
+**Implementation Status:**
+- ✅ Research complete: `ZEMAX_LENS_INTEGRATION.md`
+- ✅ Parser module: `bootstrap/utils/zemax_parser.py` (~700 lines)
+- ✅ Lens library: `bootstrap/utils/lens_library.py` (~450 lines)
+- ✅ Capability: `bootstrap/capabilities/25_apply_lens_profile.py` (~400 lines)
+- ✅ Directory structure: `assets/Lenses/Library/`, `assets/Lenses/Presets/`
+- ⏳ Camera UI integration: Not started
+
+**Reference:** `ZEMAX_LENS_INTEGRATION.md` — Complete implementation specification
+
+---
+
+### 2.1 MTF (Modulation Transfer Function) 🔴 CRITICAL
+
+**Priority:** 🔴 Critical for Industrial Vision
+
+**Why MTF is Critical:**
+Industrial machine vision relies on **edge detection** for:
+- Dimensional measurement (edge-to-edge distances)
+- Defect detection (scratches, chips, cracks)
+- Part presence/absence verification
+- Barcode/QR code reading
+
+**Without MTF:** Synthetic images have perfect edges. Real cameras have MTF rolloff. Edge detection algorithms trained on synthetic data will **fail or underperform** on real camera images.
+
+**Data Source:** Zemax MTF analysis (sagittal/tangential curves, field positions)
+
+**Required Implementation:**
+
+1. **MTF Data from Zemax**
+   - Extract via ZOSPy or parse from analysis exports
+   - Store field-dependent curves (center, mid, edge)
+   - Store sagittal and tangential separately
+
+2. **Post-Process MTF Blur**
+   - Convert MTF curves to PSF via inverse FFT
+   - Apply field-dependent blur kernel
+   - GPU acceleration for performance
+
+3. **Attributes (from Zemax):**
+   ```
+   visiondt:lens:mtfDataPath        → Path to MTF JSON/CSV
+   visiondt:lens:mtfSpatialFreq     → [10, 20, 30, 50, 100] lp/mm
+   visiondt:lens:mtfContrastSagittal → [0.95, 0.90, 0.85, 0.75, 0.50]
+   visiondt:lens:mtfContrastTangential → [0.95, 0.90, 0.85, 0.75, 0.48]
+   visiondt:lens:mtfFieldPositions  → [0.0, 0.5, 1.0]
+   visiondt:lens:mtfAt50lpmm        → 0.75 (quick reference)
+   visiondt:lens:mtfAt100lpmm       → 0.50 (quick reference)
+   visiondt:lens:mtfBlurEnabled     → true
+   ```
+
+**Reference:** `ZEMAX_LENS_INTEGRATION.md` Section 11 (Implementation Tiers)
+
+---
+
+### 2.2 Light Profiles as Saved Presets 🔴 NOT IMPLEMENTED
+
+**Priority:** High
+
+**What It Is:**
+Save complete light configurations (SPD + luminosity + geometry) as reusable profile files.
+
+**Required Implementation:**
+
+1. **Profile File Format**
+   ```json
+   {
+     "name": "OSRAM_LT_QH9G_Q2",
+     "manufacturer": "OSRAM",
+     "model": "LT QH9G",
+     "spectral": {
+       "mode": "gaussian",
+       "peakWavelength": 530,
+       "bandwidth": 33,
+       "whiteMix": 0.0
+     },
+     "luminosity": {
+       "luminousIntensity": 90,
+       "emitterWidth": 0.5,
+       "emitterHeight": 0.3
+     },
+     "geometry": {
+       "lightType": "RectLight",
+       "width": 1.0,
+       "height": 0.5
+     },
+     "electrical": {
+       "forwardCurrent": 5.0,
+       "forwardVoltage": 2.85
+     }
+   }
+   ```
+
+2. **Attributes:**
+   - `visiondt:led:profilePath` (Asset) — Path to JSON profile
+   - `visiondt:led:profileName` (String) — Display name
+
+3. **Functions:**
+   - `load_light_profile(prim, profile_path)` — Apply profile to light
+   - `save_light_profile(prim, profile_path)` — Save current settings
+   - `list_available_profiles()` — Get installed profiles
+
+4. **Directory:**
+   - `bootstrap/lighting-profiles/led/` — JSON profile library
+
+---
+
+### 2.3 Camera Intrinsic Parameters 🔴 NOT IMPLEMENTED
+
+**Priority:** Critical
+
+**What It Is:**
+Camera matrix defining focal length, principal point, and skew — core of geometric projection.
+
+**Data Source:** Combination of:
+- **Lens data from Zemax** (focal length, FOV)
+- **Sensor data from camera datasheet** (pixel pitch, sensor size)
+
+**Required Implementation:**
+
+```
+# From Zemax lens data:
+visiondt:camera:focalLengthMm     → Focal length (mm) — from Zemax EFL
+
+# From camera sensor datasheet:
+visiondt:camera:sensorWidthMm     → Sensor physical width
+visiondt:camera:sensorHeightMm    → Sensor physical height
+visiondt:camera:pixelPitchUm      → Pixel pitch (µm)
+visiondt:camera:principalPointX   → Principal point X (pixels)
+visiondt:camera:principalPointY   → Principal point Y (pixels)
+visiondt:camera:skew              → Skew coefficient (usually 0)
+```
+
+---
+
+### 2.4 Lens Distortion 🔴 IN PROGRESS (via Zemax)
+
+**Priority:** Critical
+
+**What It Is:**
+Radial and tangential distortion coefficients for accurate geometric simulation.
+
+**Data Source:** Zemax distortion analysis
+
+**Required Implementation:**
+
+```
+# From Zemax (extracted by parser):
+visiondt:lens:k1, k2, k3         → Radial distortion coefficients
+visiondt:lens:p1, p2             → Tangential distortion coefficients
+visiondt:lens:distortionModel    → "brown-conrady" or "fisheye"
+```
+
+**Implementation Tiers:**
+- **Tier 1 (Render-time):** Apply via `OmniLensDistortionOpenCvPinholeAPI` for k1-k3, p1-p2
+- **Tier 2 (Post-process):** Higher-order polynomial (k4+) via image remapping
+
+**Reference:** `ZEMAX_LENS_INTEGRATION.md` Section 12.5
+
+---
+
+### 2.5 Sensor Noise Simulation 🔴 NOT IMPLEMENTED
+
+**Priority:** High
+
+**What It Is:**
+Read noise, shot noise, and fixed-pattern noise for realistic sensor simulation.
+
+**Required Implementation:**
+
+```
+visiondt:camera:readNoiseE       → Read noise (e⁻ rms)
+visiondt:camera:darkCurrentE     → Dark current (e⁻/pixel/sec)
+visiondt:camera:gainE2DN         → Conversion gain (e⁻ per DN)
+visiondt:camera:bitDepth         → Output bit depth (8, 10, 12, 16)
+visiondt:camera:noiseEnabled     → Enable noise simulation
+```
+
+**Implementation:** Post-process noise injection based on exposure time and gain
+
+---
+
+### 2.6 Thermal Derating 🟡 FUTURE
+
+**Priority:** Medium
+
+**What It Is:**
+LED wavelength and flux shift with junction temperature.
+
+**Typical Effects:**
+- Wavelength shift: ~0.1 nm/°C for InGaN LEDs
+- Flux reduction: ~0.5%/°C
+
+**Required Implementation:**
+
+```
+visiondt:led:junctionTempC       → Operating temperature (°C)
+visiondt:led:tempCoeffWavelength → nm/°C coefficient
+visiondt:led:tempCoeffFlux       → %/°C coefficient
+```
+
+---
+
+### 2.7 Multi-Peak SPD (Phosphor LEDs) 🟡 FUTURE
+
+**Priority:** Medium
+
+**What It Is:**
+White LEDs use blue pump + phosphor, creating multi-peak SPD.
+
+**Required Implementation:**
+- Support multiple peaks in SpectralCurve class
+- Preset for typical phosphor LED shapes
+- CCT (Correlated Color Temperature) calculation
+
+---
+
+### 2.8 IES Profile Integration 🟡 PARTIAL
+
+**Priority:** High
+
+**Current State:**
+- `visiondt:iesProfile` attribute exists
+- Not actively synced to Omniverse Shaping API
+
+**Required Implementation:**
+- Sync IES path to `inputs:shaping:ies:file`
+- Support asymmetric viewing angles (e.g., 170° × 115°)
+- Fallback cone angle approximation when no IES
+
+---
+
+### 2.9 Spatial Uniformity 🔴 NOT IMPLEMENTED
+
+**Priority:** Medium
+
+**What It Is:**
+Non-uniform illumination across the light's output (center vs. edge brightness).
+
+**Required Implementation:**
+
+```
+visiondt:led:uniformityProfile   → Asset path to uniformity map
+visiondt:led:uniformityCenter    → Center brightness (0-1)
+visiondt:led:uniformityEdge      → Edge brightness (0-1)
+```
+
+---
+
+### 2.10 Custom UI Panel 🔴 NOT IMPLEMENTED
+
+**Priority:** Low (usability improvement)
+
+**What It Is:**
+Dedicated UI window for Vision DT light control with sliders, presets, and visual feedback.
+
+**Note:** Research completed, code templates exist in changes.log but feature was never implemented. Current workflow uses Raw USD Properties panel.
+
+---
+
+## Part 3: Implementation Priority Matrix
+
+| Feature | Priority | Source | Complexity | Impact |
+|---------|----------|--------|------------|--------|
+| **Zemax Lens Integration** | 🔴 Critical | Zemax files | High | Foundation for all lens params |
+| **MTF Post-Process** | 🔴 Critical | Zemax MTF | High | Essential for edge detection |
+| Lens Distortion | 🔴 Critical | Zemax distortion | Medium | Measurement accuracy |
+| Camera Intrinsics | 🔴 Critical | Zemax + sensor spec | Medium | Core geometric accuracy |
+| Light Profiles (JSON) | 🟡 High | LED datasheets | Medium | Reusable configurations |
+| Sensor Noise | 🟡 High | Camera datasheet | Medium | Training data realism |
+| IES Integration | 🟡 High | IES files | Low | Already partially done |
+| Chromatic Aberration | 🟡 Medium | Zemax CA | Medium | Color fringing accuracy |
+| Thermal Derating | 🟡 Medium | LED datasheet | Low | Environmental accuracy |
+| Multi-Peak SPD | 🟡 Medium | LED datasheet | Medium | White LED accuracy |
+| Spatial Uniformity | 🟡 Medium | Measurements | Medium | Illumination accuracy |
+| Custom UI | ⚪ Low | N/A | High | Usability only |
+
+---
+
+## Part 4: Suggested Development Order
+
+### Phase 1: Complete Lighting System ✅
+1. ✅ SPD System (DONE)
+2. ✅ Luminosity System (DONE)
+3. ⏳ Light Profiles as JSON files
+4. ⏳ IES Profile full integration
+
+### Phase 2: Zemax Lens Integration ✅ PHASE 1 COMPLETE
+**All lens/camera optical data comes from Zemax files**
+
+1. ✅ Zemax file parser module (`bootstrap/utils/zemax_parser.py`)
+2. ✅ Lens library structure (`assets/Lenses/Library/`)
+3. ✅ Lens profile capability (`25_apply_lens_profile.py`)
+4. ⏳ Camera UI lens selector (future extension)
+
+### Phase 3: MTF System 🔴 CRITICAL FOR INDUSTRIAL VISION
+**Required for accurate edge-based inspection simulation**
+
+1. ⏳ MTF data extraction from Zemax
+2. ⏳ MTF → PSF conversion (inverse FFT)
+3. ⏳ Field-dependent blur kernel
+4. ⏳ GPU-accelerated post-process
+
+### Phase 4: Camera/Lens Refinement
+1. ⏳ Higher-order distortion (k4+)
+2. ⏳ Telecentric projection override
+3. ⏳ Chromatic aberration post-process
+4. ⏳ Camera intrinsic parameters (sensor specs)
+
+### Phase 5: Sensor Simulation
+1. ⏳ Read noise and shot noise
+2. ⏳ Bit depth and quantization
+3. ⏳ Dark current
+
+### Phase 6: Advanced Features
+1. ⏳ Thermal derating
+2. ⏳ Multi-peak phosphor SPD
+3. ⏳ Spatial uniformity maps
+4. ⏳ PSF convolution (Zemax PSF import)
+
+---
+
+## Part 5: Data Source Summary
+
+| Data Type | Primary Source | Secondary Source |
+|-----------|---------------|------------------|
+| Lens optical params | **Zemax files (.zmx, .zar)** | — |
+| Distortion coefficients | **Zemax distortion analysis** | — |
+| MTF curves | **Zemax MTF analysis** | — |
+| Chromatic aberration | **Zemax CA analysis** | — |
+| PSF data | **Zemax Huygens PSF export** | — |
+| Sensor specs | Camera datasheet | Calibration measurements |
+| LED spectral | SPD CSV files | LED datasheet |
+| LED luminosity | LED datasheet (mcd, mlm) | Measurements |
+| IES profiles | IES files from manufacturer | — |
+
+**Key Principle:** Zemax is the **single source of truth** for all lens optical data. New lenses are added by importing Zemax files, not by manually entering parameters.
+
+---
+
+## References
+
+- `ZEMAX_LENS_INTEGRATION.md` — **Primary reference for lens system implementation**
+- `LIGHTING_AND_OPTICS.md` — Current lighting system documentation
+- `HARDWARE_SPECS.md` — Required hardware parameters
+- `DEVELOPMENT_GUIDE.md` — Implementation patterns and pitfalls
+- `logs/changes.log` — Detailed implementation history
+
+---
+
+*Document Version: 1.1*
+*Last Updated: December 2025*
+*Change: Added Zemax as canonical source for lens data; MTF elevated to Critical priority for industrial vision*

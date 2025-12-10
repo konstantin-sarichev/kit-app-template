@@ -1,0 +1,43 @@
+{
+  "name": "Telecentric Lenses",
+  "description": "Preset configurations for telecentric lenses commonly used in machine vision",
+  "presets": [
+    {
+      "id": "telecentric_0.5x_wd100",
+      "name": "0.5x Telecentric (WD 100mm)",
+      "description": "Standard 0.5x telecentric lens with 100mm working distance",
+      "parameters": {
+        "magnification": 0.5,
+        "working_distance_mm": 100.0,
+        "f_number": 8.0,
+        "is_telecentric": true,
+        "telecentric_type": "object-space"
+      }
+    },
+    {
+      "id": "telecentric_1.0x_wd65",
+      "name": "1.0x Telecentric (WD 65mm)",
+      "description": "Unity magnification telecentric lens",
+      "parameters": {
+        "magnification": 1.0,
+        "working_distance_mm": 65.0,
+        "f_number": 8.0,
+        "is_telecentric": true,
+        "telecentric_type": "object-space"
+      }
+    },
+    {
+      "id": "telecentric_2.0x_wd30",
+      "name": "2.0x Telecentric (WD 30mm)",
+      "description": "2x magnification telecentric lens for close inspection",
+      "parameters": {
+        "magnification": 2.0,
+        "working_distance_mm": 30.0,
+        "f_number": 6.0,
+        "is_telecentric": true,
+        "telecentric_type": "double"
+      }
+    }
+  ]
+}
+

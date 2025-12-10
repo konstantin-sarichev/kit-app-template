@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "model": "1.0x Telecentric (WD 65mm)",
+    "manufacturer": "Preset",
+    "notes": "Unity magnification telecentric lens",
+    "parse_version": "1.0"
+  },
+  "optical": {
+    "focal_length_mm": 0,
+    "effective_focal_length_mm": 0,
+    "working_distance_mm": 65.0,
+    "f_number": 8.0,
+    "field_of_view_deg": 0,
+    "magnification": 1.0,
+    "numerical_aperture": 0.0625,
+    "is_telecentric": true,
+    "telecentric_type": "object-space"
+  },
+  "distortion": {
+    "model": "brown-conrady",
+    "k1": 0,
+    "k2": 0,
+    "k3": 0,
+    "p1": 0,
+    "p2": 0
+  },
+  "mtf": {
+    "mtf_at_50lpmm": 0.72,
+    "mtf_at_100lpmm": 0.48,
+    "f_stop": 8.0
+  }
+}
+

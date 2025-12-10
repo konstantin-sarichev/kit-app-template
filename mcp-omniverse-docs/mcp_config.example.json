@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "omniverse-docs": {
+      "command": "python",
+      "args": [
+        "-m",
+        "src.server"
+      ],
+      "cwd": "G:/Vision_Example_1/kit-app-template/mcp-omniverse-docs",
+      "env": {
+        "OMNIVERSE_DOCS_CACHE_HOURS": "24",
+        "OMNIVERSE_DOCS_DEBUG": "0"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,29 @@
+# Cursor Rules for MCP Omniverse Documentation Server
+
+This MCP server provides real-time access to NVIDIA Omniverse documentation.
+
+## Quick Start
+
+1. Install dependencies: `pip install -e .`
+2. Configure in Cursor settings (see mcp_config.example.json)
+3. Use tools in Cursor to query Omniverse documentation
+
+## Available Tools
+
+- **search_omniverse_docs**: Search across all Omniverse docs
+- **get_api_reference**: Get specific API documentation
+- **get_extension_guide**: Extension development guides
+- **search_code_examples**: Find code examples
+- **search_omniverse_best_practices**: Best practices for Vision DT
+
+## Usage Examples
+
+Query: "How do I subscribe to stage open events?"
+Tool: search_omniverse_docs with query="stage open events"
+
+Query: "Show me the Usd.Stage API"
+Tool: get_api_reference with api_path="pxr.Usd.Stage", api_type="usd"
+
+Query: "Extension lifecycle best practices"
+Tool: get_extension_guide with topic="lifecycle"
+

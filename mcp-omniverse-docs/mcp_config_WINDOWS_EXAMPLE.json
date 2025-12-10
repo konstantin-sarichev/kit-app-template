@@ -1,0 +1,27 @@
+{
+  "_comment": "Example MCP configuration for Windows",
+  "_instructions": [
+    "1. Find your Python path: Run 'where python' in Command Prompt",
+    "2. Note where you extracted mcp-omniverse-docs folder",
+    "3. Replace the paths below with YOUR actual paths",
+    "4. Copy this configuration to your Cursor mcp.json file",
+    "5. Restart Cursor completely"
+  ],
+  "mcpServers": {
+    "omniverse-docs": {
+      "command": "C:/Users/YourName/AppData/Local/Programs/Python/Python310/python.exe",
+      "args": [
+        "-m",
+        "src.server"
+      ],
+      "cwd": "C:/Tools/mcp-omniverse-docs",
+      "env": {
+        "OMNIVERSE_DOCS_CACHE_HOURS": "24",
+        "OMNIVERSE_DOCS_DEBUG": "0"
+      }
+    }
+  }
+}
+
+
+
