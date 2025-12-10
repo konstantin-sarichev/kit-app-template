@@ -19,8 +19,9 @@ template_name = "omni.usd_explorer"
 "omni.activity.ui" = {}
 "omni.activity.usd_resolver" = {}
 "omni.hydra.engine.stats" = {}
-"omni.hydra.pxr" = {}
 "omni.hydra.pxr.settings" = {}
+"omni.hydra.pxr" = {}
+"omni.hydra.usdrt_delegate" = {}  # Necessary since FabricSceneDelegate is True
 "omni.kit.asset_converter" = {} # File format conversion
 "omni.kit.browser.asset" = {}  # Enable the NVIDIA asset Browsing only
 "omni.kit.browser.sample" = {}  # Examples
@@ -39,6 +40,7 @@ template_name = "omni.usd_explorer"
 "omni.kit.menu.common" = { order = 1000 }
 "omni.kit.menu.edit" = {}
 "omni.kit.menu.file" = {}
+"omni.kit.primitive.mesh" = {} # Primitive mesh
 "omni.kit.property.bundle" = {}
 "omni.kit.property.layer" = {}
 "omni.kit.quicklayout" = {} # Quicklayout is on enabling custom layouts
@@ -71,6 +73,7 @@ template_name = "omni.usd_explorer"
 "omni.kit.viewport.scene_camera_model" = {}  # Push camera changes to Viewport ui.scene as fast as possible
 "omni.kit.viewport.window" = {}
 "omni.kit.waypoint.playlist" = {}
+"omni.kit.widget.cache_indicator" = {}
 "omni.kit.widget.filebrowser" = {} # General purpose widgets to browsder and select fles
 "omni.kit.widget.layers" = {}
 "omni.kit.widget.live" = {}  # Includes Cache status display
@@ -108,7 +111,6 @@ template_name = "omni.usd_explorer"
 [settings.app]
 name = "{{ application_display_name }}"
 fastShutdown = true  # Fast shutdown by default
-useFabricSceneDelegate = true  # Turn on the Fabric scene delegate by default
 
 [settings.app.content]
 emptyStageOnStart = true # This will create a stage during the startup process.
@@ -177,7 +179,7 @@ resolution.width = 1920
 skipWhileMinimized = true
 
 [settings.app.settings]
-dev_build = false
+dev_build = true
 persistent = true
 
 [settings.app.startup]
@@ -271,7 +273,7 @@ x = -1
 y = -1
 
 [settings.crashreporter]
-compressDumpfiles = true
+compressDumpFiles = true
 
 [settings.crashreporter.data]
 experience = "{{ application_display_name }}"
@@ -579,9 +581,6 @@ autoLightRig.enabled = true
 [settings.persistent.exts."omni.kit.viewport.window"]
 cameraSpeedMessage.showFlyViewLock = true
 
-[settings.privacy]
-externalBuild = true
-
 [settings.renderer]
 active = "rtx"  # RTX As the default renderer always
 enabled = "rtx"  # only enable rtx renderer by default
@@ -632,10 +631,11 @@ useUniformsReindexing = true
 [settings.structuredLog]
 enable = true
 
-[settings.telemetry]
-# Anonymous Kit application usage telemetry
-enableAnonymousData = true
-enableAnonymousAppName = true
+[settings]
+telemetry.disableInternalSessionCheck = true
+telemetry.enableAnonymousAppName = true
+telemetry.enableAnonymousData = true
+privacy.externalBuild = true
 
 
 [[test]]
